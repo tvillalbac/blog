@@ -1,0 +1,100 @@
+---
+---
+
+
+$themeColor: #0a99ff;
+$primaryDark: rgb(10, 10, 14);
+$accentDark: #ffffff;
+$lightGray: #9a9dab;
+$texts: #515160;
+
+@import "jekflix";
+
+// main background color
+body, footer, body.main-page, .bar-header, body.main-page .bar-header, body.light:not(.main-page) .bar-header, .main-page footer, aside.sidebar, aside.sidebar.open  {
+    background-color:rgb(10, 10, 14);
+}
+
+// secondary background color
+.bar-header .get-theme, .box-item .box-body .tags a:hover, aside.sidebar nav ul li a:hover, .time-bar .completed, .contact-form button[type="submit"], .search-form .icon-remove-sign, .search-form .search-list .entry-category, .post-content .tags a:hover {
+    background-color: #0a99ff;
+}
+
+.post-content .tag-title span {
+    background-color: #fff;
+}
+
+.contact-form button[type="submit"]:hover {
+    background-color: #515160;
+}
+
+.post-content .tag-title span,  .post-content .tags a:hover {
+    color:rgb(10, 10, 14);
+}
+
+// main text color
+body, p, .box-item .box-body p, .post-content p, .post-content li, footer p, .main-page footer p, footer a  {
+    color: #515160;
+}
+
+// Header text color
+h1, h2, h3, .box-item .box-body .tags a:hover, .post-content h1.post-title, .see-also ul li a, body.light:not(.main-page) .bar-header .logo a, body.light:not(.main-page) .bar-header .version, aside.sidebar h2, aside.sidebar nav ul li a:hover, .post-content .tags a, .post-content .tags a:hover {
+    color: #ebebee;
+}
+
+// Secondary Header text color
+h4, h5, .post-content p.post-subtitle, aside.sidebar nav ul li a {
+    color: #9a9dab;
+}
+
+// highlight color
+.box-item .box-body .cover .read-icon, .hero .content .button svg, .post-content a, .author .name a, footer a:hover, .search-form .search-list a:hover {
+    color: #0a99ff;
+}
+
+.post-content blockquote {
+    border-color: #0a99ff;
+}
+
+footer svg.love, footer a:hover {
+    fill:#0a99ff;
+}
+
+footer a  {
+    fill: #515160;
+}
+
+body.light:not(.main-page) .bar-header .icon-menu, body.light:not(.main-page) .bar-header .icon-search {
+    fill: #ebebee;
+}
+
+// Details
+aside.sidebar h2, .post-content ul.post-list a {
+    border-bottom: none;
+}
+
+footer {
+    border-top: none;
+}
+
+.author {
+    background: none;
+}
+
+footer ul a:hover {
+    text-decoration: none;
+}
+
+.post-content .tag-title span {
+    background-color: transparent;
+    color: #ebebee;
+    font-size: 2rem;
+}
+
+.contact-form button[type="submit"] {
+    border: none;
+}
+
+.post-content .tags a {
+    border-color: #ebebee;
+}
