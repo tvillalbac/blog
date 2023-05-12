@@ -1,13 +1,13 @@
 ---
 date: 2023-05-12 20:05
 layout: post
-title: Fix up Unreal Engine 5 redirectors by c++ code
+title: Fix up Unreal Engine 5 redirectors by c++ code 2
 subtitle: Learn how to fix up Unreal Engine referencers by code
 description: How to fix up Unreal Engine 5 redirectors by c++ code
 image: https://tvillalbac.github.io/blog/assets/img/posts/fix-up-unreal-engine-redirectors-by-code-cpp.jpg
 category: Unreal Engine 5
 category-url: unreal-engine-5
-tags: unreal cpp
+tags: unreal-engine cpp
 author: toni-villalba-corominas
 paginate: true
 ---
