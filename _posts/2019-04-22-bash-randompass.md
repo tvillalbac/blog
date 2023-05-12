@@ -7,7 +7,7 @@ description: Quick script to generate random passwords.
 image: https://bgx4k3p.github.io/blog/assets/img/code-large.jpg
 category: linux
 tags: linux ubuntu bash
-author: bgx4k3p
+author: toni-villalba-corominas
 paginate: true
 ---
 

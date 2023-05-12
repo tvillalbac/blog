@@ -7,7 +7,7 @@ description: One-liner to dedup Bash History.
 image: https://bgx4k3p.github.io/blog/assets/img/bash.jpg
 category: linux
 tags: linux ubuntu bash
-author: bgx4k3p
+author: toni-villalba-corominas
 paginate: true
 ---
 

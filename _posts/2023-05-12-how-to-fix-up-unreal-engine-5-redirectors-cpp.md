@@ -1,12 +1,12 @@
 ---
 date: 2021-09-27 12:26
 layout: post
-title: Install ESXi updates from command line
+title: Fix up Unreal Engine 5 redirectors by c++ code
 subtitle: Quick notes
-description: How to install ESXi updates from command line
-image: https://bgx4k3p.github.io/blog/assets/img/esxi.jpg
-category: linux
-tags: vmware esxi
+description: How to fix up Unreal Engine 5 redirectors by c++ code
+image: https://bgx4k3p.github.io/blog/assets/img/posts/fix-up-unreal-engine-redirectors-by-code-cpp.jpg
+category: unreal-engine-5
+tags: unreal cpp
 author: toni-villalba-corominas
 paginate: true
 ---

@@ -7,7 +7,7 @@ description: How to clean up old kernels on Ubuntu linux.
 image: https://bgx4k3p.github.io/blog/assets/img/bash.jpg
 category: linux
 tags: linux ubuntu bash
-author: bgx4k3p
+author: toni-villalba-corominas
 paginate: true
 ---
 

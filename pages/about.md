@@ -11,6 +11,9 @@ permalink: /about/
 
 # Toni Villalba Corominas
 
+#### *Senior Technical Artist*
+{: .about-title }
+
 - Professional experience coding tools for Maya (Maya API 2.0, Python Commands or PyMEL), Blender(Python), Substance 3D Painter and Substance 3D Designer(Python and Javascript), Marmoset(Python), Photoshop(Javascript), Unreal Engine(C++, Python and Blueprints), Perforce integration tools for them(Python or P4 commands), PySide2/PyQt5 libraries for UI(C++ and Python) and tools for integration between them.  
 - Profesional experience coding shaders in HLSL or GLSL and creating materials in Unreal Engine material editor, Maya and Blender node systems.  
 - Professional coding skills in Python, C++, javascript, GLSL, Html, css, and .sql.  
@@ -24,7 +27,9 @@ permalink: /about/
 
 ## Web programmer
 
-### *Freelance / Vila-real (Castellón), Spain / July 2011- April 2019*
+#### *Freelance / Vila-real (Castellón), Spain / July 2011- April 2019*
+{: .about-title }
+
 After having experience in sales and passionate about coding for the web, I run my own webpages business, specialized on big companies. I enjoyed a lot during many years but because my passion for 3d videogames I decided to switch my career to videogames industry and learn all the necessary on my free time until I considered that I had a good portfolio for applying for a big company.  
 - Coding in the main languages used in webpages as Html, Css, javascript and 
 sql,
@@ -35,7 +40,9 @@ manage the webpages
 
 ## Technical Artist
 
-### *elite3d / Valencia, Spain / May 2019- December 2019 (On site/Remote)*
+#### *elite3d / Valencia, Spain / May 2019- December 2019 (On site/Remote)*
+{: .about-title }
+
 As a AAA outsourcing studio, in elite3d I had the chance to work on a big variety of 
 projects and production tools. I learned there to be a jack of all trades and learned from 
 the tech art mates of the client companies as I was the only technical artist with 
@@ -80,7 +87,9 @@ system integrated with a jira plugin.
 
 ## Technical Artist
 
-### *31st Union / Valencia, Spain / from January 2020 (Remote)*
+#### *31st Union / Valencia, Spain / from January 2020 (Remote)*
+{: .about-title }
+
 Because the high quality of our work at elite3d, the company was bought by 2K games 
 early December this year and early 2022 I started working at 31st Union, a division of 
 2K games in Valencia. As part of a big team of tech artists, I’m specialized in texturing 
@@ -106,7 +115,9 @@ assets, submitted to the main build in some critical moments.
 
 ## Technical Artist
 
-### *Freelance / Valencia, Spain / from January 2021 (Remote)*
+#### *Freelance / Valencia, Spain / from January 2021 (Remote)*
+{: .about-title }
+
 I'm working on my free time as advisor for advertisement and 3d animated films
 companies helping to develop many kinds of projects for small and big companies as 
 General Motors or Alphalete, among others.
