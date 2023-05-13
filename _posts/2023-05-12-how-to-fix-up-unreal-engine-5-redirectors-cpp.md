@@ -7,9 +7,10 @@ description: How to fix up Unreal Engine 5 redirectors by c++ code
 image: https://tvillalbac.github.io/blog/assets/img/posts/fix-up-unreal-engine-redirectors-by-code-cpp.jpg
 category: Unreal Engine 5
 category-url: unreal-engine-5
-tags: unreal cpp
+tags: unreal-engine cpp
 author: toni-villalba-corominas
 paginate: true
+recommended: https://tvillalbac.github.io/blog/how-to-fix-up-unreal-engine-5-redirectors-cpp-2/
 ---
 
 Note:Main explanation and link to the post of how to fix redirectors by hand in UE5

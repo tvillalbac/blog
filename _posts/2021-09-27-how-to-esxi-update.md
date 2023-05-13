@@ -5,7 +5,8 @@ title: Install ESXi updates from command line
 subtitle: Quick notes
 description: How to install ESXi updates from command line
 image: https://bgx4k3p.github.io/blog/assets/img/esxi.jpg
-category: linux
+category: Maya
+category-url: maya
 tags: vmware esxi
 author: toni-villalba-corominas
 paginate: true

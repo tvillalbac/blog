@@ -1,15 +1,16 @@
 ---
 date: 2023-05-12 20:05
 layout: post
-title: Fix up Unreal Engine 5 redirectors by c++ code 2
-subtitle: Learn how to fix up Unreal Engine referencers by code
-description: How to fix up Unreal Engine 5 redirectors by c++ code
-image: https://tvillalbac.github.io/blog/assets/img/posts/fix-up-unreal-engine-redirectors-by-code-cpp.jpg
+title: Fix up Unreal Engine 5 redirectors using blueprints
+subtitle: Learn how to fix up Unreal Engine referencers using blueprints
+description: How to fix up Unreal Engine 5 redirectors using blueprints
+image: https://tvillalbac.github.io/blog/assets/img/posts/fix-up-unreal-engine-redirectors-using-blueprints.jpg
 category: Unreal Engine 5
 category-url: unreal-engine-5
 tags: unreal-engine cpp
 author: toni-villalba-corominas
 paginate: true
+recommended: https://tvillalbac.github.io/blog/how-to-fix-up-unreal-engine-5-redirectors-cpp/
 ---
 
 Note:Main explanation and link to the post of how to fix redirectors by hand in UE5

@@ -5,7 +5,8 @@ title: Uninstall Old Kernels on Ubuntu
 subtitle: Quick notes
 description: How to clean up old kernels on Ubuntu linux.
 image: https://bgx4k3p.github.io/blog/assets/img/bash.jpg
-category: linux
+category: Maya
+category-url: maya
 tags: linux ubuntu bash
 author: toni-villalba-corominas
 paginate: true

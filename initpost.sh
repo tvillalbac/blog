@@ -118,9 +118,11 @@ echo "description:"
 echo "image:"
 echo "optimized_image:"
 echo "category:"
+echo "category-url:"
 echo "tags:"
 echo "author:"
 echo "paginate: false"
+echo "recommended: false"
 echo "---"
 
 }
