@@ -7,7 +7,7 @@ description: How to use the TVC redirectors plugin for Unreal Engine
 permalink: /redirectors-fixer-plugin/
 ---
 
-<img class="img" src="https://tvillalbac.github.io/blog/assets/img/posts/plugin-fix-up-unreal-engine-redirectors-automated-system.jpg" alt="Toni Villalba Corominas">
+<img class="img" src="https://tvillalbac.github.io/blog/assets/img/posts/plugin-fix-up-unreal-engine-redirectors-automated-system.jpg" alt="TVC redirectors plugin for Unreal Engine 5 right click menu">
 
 # TVC Redirectors Fixer Plugin Guide for Unreal Engine 4.27 & 5
 
@@ -21,4 +21,8 @@ This is a guide on how to activate and use TVC Redirectors Fixer plugin for Unre
 If you want to purchase it or don't know how to install it, you can search for "Redirector" in Marketplace search bar to find the plugin and refer to this link from official documentation: <a href="https://docs.unrealengine.com/5.0/en-US/working-with-plugins-in-unreal-engine/#installingpluginsfromtheunrealenginemarketplace">Installing Plugins from the Unreal Engine Marketplace</a>. It also applies to Unreal Engine 4.27 version.
 
 ## Activate plugin
+
+After having the plugin installed properly in your project, activating the plugin go to Plugins window by clicking on Edit menu and next on Plugins.
+
+<img class="img" src="https://tvillalbac.github.io/blog/assets/img/pages/RedirectorsFixerGuide/open-plugins-window.jpg" alt="Open Plugins window in Unreal Engine 5">
 
