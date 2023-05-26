@@ -89,3 +89,13 @@ To move any files or folders to any other folder, you just drag and drop them as
 
 <img class="img" src="https://tvillalbac.github.io/blog/assets/img/pages/RedirectorsFixerGuide/move-here-fixing-redirectors-plugin.jpg" alt="Move here assets contextual menu of TVC Redirectors Fixer plugin in Unreal Engine 5">
 <img class="img" src="https://tvillalbac.github.io/blog/assets/img/pages/RedirectorsFixerGuide/move-here-fixing-redirectors-plugin-contextual-menu.jpg" alt="Move here assets contextual menu of TVC Redirectors Fixer plugin in Unreal Engine 5">
+
+Then the plugin will move the dropped selection to the selected location and fix the redirectors generated, if any.
+
+<img class="img" src="https://tvillalbac.github.io/blog/assets/img/pages/RedirectorsFixerGuide/move-files-fixing-redirectors-notify-messages.jpg" alt="Move here assets notify messages">
+
+If the dropped selection includes any folder, the plugin will also fix the redirectors generated for the assets inside the folders, if any, and will remove the old folder location.
+
+<img class="img" src="https://tvillalbac.github.io/blog/assets/img/pages/RedirectorsFixerGuide/move-here-fixing-redirectors-plugin-contextual-menu-multiselection.jpg" alt="Move here assets and folders contextual menu">
+<img class="img" src="https://tvillalbac.github.io/blog/assets/img/pages/RedirectorsFixerGuide/move-folder-and-files-fixing-redirectors-plugin-success-messages.jpg" alt="Move here assets and folders success messages">
+
