@@ -26,7 +26,7 @@ For activating the plugin, you can refer to <a href="https://tvillalbac.github.i
 
 Once this step is done, we can continue to next configuration stage.
 
-## Configure shortcut
+## Configure shortcut for renaming assets fixing redirectors
 
 There's a shortcut for renaming assets fixing redirectors that you need to configure as it's not by default.
 
@@ -41,5 +41,8 @@ Once the window is open, click on Keyboard Shortcuts in the left section and sea
 Success! Now you can select any asset or folder in Content Browser and click on your shortcut to display the "TVC Renaming File Fixing Redirectors" window.
 
 <img class="img" src="https://tvillalbac.github.io/blog/assets/img/pages/RedirectorsFixerGuide/rename-asset-fixing-redirectors-using-shortcut.jpg" alt="Rename asset by shortcut using TVC Redirectors Fixer plugin in Unreal Engine 5">
+<img class="img" src="https://tvillalbac.github.io/blog/assets/img/pages/RedirectorsFixerGuide/rename-asset-fixing-redirectors-using-shortcut-in-folder.jpg" alt="Rename folder by shortcut using TVC Redirectors Fixer plugin in Unreal Engine 5">
 
+## Basic Usage
 
+In essence, what this plugin does, is adding another contextual menu entry in Unreal Engine Content Browser, next to "Rename" and "Move Here" entries, which are actions able to cause redirectors creation, with extended functionality of fixing created redirectors right after the move or rename action has finished.
