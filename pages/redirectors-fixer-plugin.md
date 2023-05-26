@@ -22,7 +22,23 @@ If you want to purchase it or don't know how to install it, you can search for "
 
 ## Activate plugin
 
-After having the plugin installed properly in your project, activating the plugin go to Plugins window by clicking on Edit menu and next on Plugins.
+For activating the plugin, you can refer to <a href="https://tvillalbac.github.io/blog/how-to-activate-unreal-engine-plugin/">this blog post</a> to know how activate the plugin for your project.
 
-<img class="img" src="https://tvillalbac.github.io/blog/assets/img/pages/RedirectorsFixerGuide/open-plugins-window.jpg" alt="Open Plugins window in Unreal Engine 5">
+Once this step is done, we can continue to next configuration stage.
+
+## Configure shortcut
+
+There's a shortcut for renaming assets fixing redirectors that you need to configure as it's not by default.
+
+For that go to Editor Preferences window by clicking on Edit menu and Editor Preferences button in its submenu.
+
+<img class="img" src="https://tvillalbac.github.io/blog/assets/img/pages/RedirectorsFixerGuide/open-editor-preferences-window-unreal-engine.jpg" alt="Open Editor Preferences window in Unreal Engine 5">
+
+Once the window is open, click on Keyboard Shortcuts in the left section and search for "tvc" in the search bar. You can configure it as your taste as it's empty by default. Personally, I set it as Ctrl+Alt+Shift+R as it's pretty easy to remember and I don't have any other assigned as this for Content Browser context.
+
+<img class="img" src="https://tvillalbac.github.io/blog/assets/img/pages/RedirectorsFixerGuide/tvc-redirectors-fixer-plugin-shortcut-setup.jpg" alt="Setup shortcut for TVC Redirectors Fixer plugin in Editor Preferences window in Unreal Engine 5">
+
+Success! Now you can select any asset or folder in Content Browser and click on your shortcut to display the "TVC Renaming File Fixing Redirectors" window.
+
+<img class="img" src="https://tvillalbac.github.io/blog/assets/img/pages/RedirectorsFixerGuide/rename-asset-fixing-redirectors-using-shortcut.jpg" alt="Rename asset by shortcut using TVC Redirectors Fixer plugin in Unreal Engine 5">
 
