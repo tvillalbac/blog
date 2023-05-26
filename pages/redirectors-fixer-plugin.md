@@ -9,7 +9,7 @@ permalink: /redirectors-fixer-plugin/
 
 <img class="img" src="https://tvillalbac.github.io/blog/assets/img/posts/plugin-fix-up-unreal-engine-redirectors-automated-system.jpg" alt="TVC redirectors plugin for Unreal Engine 5 right click menu">
 
-# TVC Redirectors Fixer Plugin Guide for Unreal Engine 4.27 & 5
+# TVC Redirectors Fixer Plugin Guide for Unreal Engine 4.27 & 5 (All versions)
 
 #### *How to fix up redirectors right after renaming or moving files or folders in Unreal Engine 5 and 4.27 in an automated way using this cool plugin*
 {: .about-title }
@@ -66,18 +66,22 @@ You can rename any folder or asset in Content Browser by right clicking on it an
 
 Or the "Rename Folder Fixing Redirectors" menu, if selection is a folder.
 
-<img class="img" src="https://tvillalbac.github.io/blog/assets/img/pages/RedirectorsFixerGuide/rename-folder-fixing-redirectors-plugin-contextual-menu.jpg" alt="Rename asset contextual menu of TVC Redirectors Fixer plugin in Unreal Engine 5">
+<img class="img" src="https://tvillalbac.github.io/blog/assets/img/pages/RedirectorsFixerGuide/rename-folder-fixing-redirectors-plugin-contextual-menu.jpg" alt="Rename folder contextual menu of TVC Redirectors Fixer plugin in Unreal Engine 5">
 
 As you will see, when the "TVC Renaming File Fixing Redirectors" or "TVC Renaming Folder Fixing Redirectors" window appears, you can write the new name in the New Name section and click on "Ok".
 
-<img class="img" src="https://tvillalbac.github.io/blog/assets/img/pages/RedirectorsFixerGuide/rename-asset-fixing-redirectors-window.jpg" alt="Rename asset contextual menu of TVC Redirectors Fixer plugin in Unreal Engine 5">
+<img class="img" src="https://tvillalbac.github.io/blog/assets/img/pages/RedirectorsFixerGuide/rename-asset-fixing-redirectors-window.jpg" alt="Rename asset window of TVC Redirectors Fixer plugin in Unreal Engine 5">
 
-After that a mesage 
+Then, the asset will be renamed to the selected name and the redirector generated, if any, will be fixed. A couple of notification messages will show if those two actions were successful.
 
-<img class="img" src="https://tvillalbac.github.io/blog/assets/img/pages/RedirectorsFixerGuide/rename-asset-fixing-redirectors-plugin-success-message.jpg" alt="Rename asset contextual menu of TVC Redirectors Fixer plugin in Unreal Engine 5">
+<img class="img" src="https://tvillalbac.github.io/blog/assets/img/pages/RedirectorsFixerGuide/rename-asset-fixing-redirectors-plugin-success-message.jpg" alt="Rename asset success notifies messages">
+
+If the selection is a folder, it also fixes all the redirectors in the selected folder and subfolders and removes the old folders, keeping your content browser clean of redirectors and empty folders.
+
+<img class="img" src="https://tvillalbac.github.io/blog/assets/img/pages/RedirectorsFixerGuide/rename-folder-fixing-redirectors-plugin-success-message.jpg" alt="Rename folder success notifies messages">
 
 There is another option for renaming any file or folder by selecting it and pressing the defined keyboard shortcut.
-If you don't know how to set and enable this keyboard shortcut, refer to this section about <a href="https://tvillalbac.github.io/blog/redirectors-fixer-plugin/#configure-shortcut-for-renaming-assets-fixing-redirectors">how to onfigure shortcut for renaming assets fixing redirectors</a>.
+If you don't know how to set and enable this keyboard shortcut, refer to this section about <a href="https://tvillalbac.github.io/blog/redirectors-fixer-plugin/#configure-shortcut-for-renaming-assets-fixing-redirectors">how to configure shortcut for renaming assets fixing redirectors</a>.
 
 ## Move files and folders fixing redirectors
 
