@@ -11,7 +11,7 @@ permalink: /redirectors-fixer-plugin/
 
 # TVC Redirectors Fixer Plugin Guide for Unreal Engine 4.27 & 5
 
-#### *How to fix up redirectors right after renaming or moving files or folders in Unreal Engine 5 and 4.27 in an automated way*
+#### *How to fix up redirectors right after renaming or moving files or folders in Unreal Engine 5 and 4.27 in an automated way using this cool plugin*
 {: .about-title }
 
 ## Install plugin
@@ -41,4 +41,5 @@ Once the window is open, click on Keyboard Shortcuts in the left section and sea
 Success! Now you can select any asset or folder in Content Browser and click on your shortcut to display the "TVC Renaming File Fixing Redirectors" window.
 
 <img class="img" src="https://tvillalbac.github.io/blog/assets/img/pages/RedirectorsFixerGuide/rename-asset-fixing-redirectors-using-shortcut.jpg" alt="Rename asset by shortcut using TVC Redirectors Fixer plugin in Unreal Engine 5">
+
 

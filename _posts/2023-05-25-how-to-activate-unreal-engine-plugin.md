@@ -12,7 +12,9 @@ author: toni-villalba-corominas
 recommended: https://tvillalbac.github.io/blog/how-to-fix-up-unreal-engine-5-redirectors-blueprints/
 ---
 
-It is suposed that you have the plugin already installed for your project. If you don't know how to install a plugin, you can refer to this link from official documentation: <a href="https://docs.unrealengine.com/5.0/en-US/working-with-plugins-in-unreal-engine/#installingpluginsfromtheunrealenginemarketplace">Installing Plugins from the Unreal Engine Marketplace</a>. It also applies to Unreal Engine 4.27 version. For this example I'll be using <a href="https://tvillalbac.github.io/blog/redirectors-fixer-plugin/">TVC Redirectors Fixer plugin</a> which is a plugin that I developed for fixing redirectors right after move or rename operations in Content Browser.
+It is suposed that you have the plugin already installed for your project. If you don't know how to install a plugin, you can refer to this link from official documentation: <a href="https://docs.unrealengine.com/5.0/en-US/working-with-plugins-in-unreal-engine/#installingpluginsfromtheunrealenginemarketplace">Installing Plugins from the Unreal Engine Marketplace</a>. It also applies to Unreal Engine 4.27 version.
+
+For this example I'll be using <a href="https://tvillalbac.github.io/blog/redirectors-fixer-plugin/">TVC Redirectors Fixer plugin</a> which is a plugin that I developed for fixing redirectors right after move or rename operations in Content Browser.
 
 After having the plugin installed properly in your project, for activating the plugin go to Plugins window by clicking on Edit menu and next on Plugins.
 
