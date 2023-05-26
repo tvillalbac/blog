@@ -66,3 +66,5 @@ On drag and drop any files or folders on top another folder, it shows the "Move 
 <img class="img" src="https://tvillalbac.github.io/blog/assets/img/pages/RedirectorsFixerGuide/move-here-fixing-redirectors-plugin-contextual-menu.jpg" alt="Move here assets contextual menu of TVC Redirectors Fixer plugin in Unreal Engine 5">
 
 ## Rename files and folders fixing redirectors
+
+Some text
