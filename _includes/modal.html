@@ -4,12 +4,13 @@
             <use xlink:href="#icon-close"></use>
         </svg>
         <div class="header">
+            <p>{{ include.subtitle }}</p>
             <h2>{{ include.title }}</h2>
             <p>{{ include.subtitle }}</p>
         </div>
         <div class="content">
             <ul>
-                {% assign next_posts = site.posts | where_exp:"post","post.is_generated != true" | where_exp:"post","post.path != page.path" %}
+                {% assign next_posts = site.posts | where_exp:"post","post.is_generated != true" | where_exp:"post","post.path != page.path" | where_exp:"post","post.category-url == include.category-url" %}
                 {% assign shuffled_array = next_posts | shuffle %}
                 {% for post in shuffled_array limit:2 %}
                     <li>

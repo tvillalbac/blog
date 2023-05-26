@@ -18,7 +18,12 @@
                     <svg id="clock" class="icon-clock"><use xlink:href="#icon-clock"></use></svg>
                     <span>{{ minutesText }}</span>
                 </p>
-                <h1 class="post-title">{{ page.title }}</h1>
+                <h1 class="post-title">
+                    <a href="{{ site.baseurl }}/{{ site.categories_folder | default: 'category' }}/{{ page.category-url }}" class="post-category">
+                        <span>{{ page.category }}</span>
+                    </a>
+                    {{ page.title }}
+                </h1>
                 <p class="post-subtitle">{{ page.subtitle }}</p>
 
                 {% if page.image and paginator.activated == nil %}
@@ -51,6 +56,7 @@
                                         <img src="/assets/img/off.jpg">
                                     {% endif %}
                                     <h3>{{ post.title }}</h3>
+                                    <span class="category">{{ post.category }}</span>
                                 </a>
                             </li>
                         {% endfor %}

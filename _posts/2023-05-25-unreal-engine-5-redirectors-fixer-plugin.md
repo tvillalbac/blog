@@ -1,15 +1,15 @@
 ---
-date: 2023-05-12 20:05
+date: 2023-05-22 20:05
 layout: post
-title: Fix up Unreal Engine 5 redirectors by c++ code
-subtitle: Learn how to fix up Unreal Engine referencers by code
-description: How to fix up Unreal Engine 5 redirectors by c++ code
-image: https://tvillalbac.github.io/blog/assets/img/posts/fix-up-unreal-engine-redirectors-by-code-cpp.jpg
+title: Unreal Engine 5 Redirectors Fixer Plugin
+subtitle: Learn how to use the TVC Redirectors Fixer plugin in Unreal Engine 5
+description: How to use the TVC Redirectors Fixer plugin in Unreal Engine 5
+image: https://tvillalbac.github.io/blog/assets/img/posts/plugin-fix-up-unreal-engine-redirectors-automated-system.jpg
 category: Unreal Engine 5
 category-url: unreal-engine-5
-tags: unreal-engine cpp
+tags: unreal-engine
 author: toni-villalba-corominas
-recommended: https://tvillalbac.github.io/blog/how-to-fix-up-unreal-engine-5-redirectors-cpp-2/
+recommended: https://tvillalbac.github.io/blog/how-to-fix-up-unreal-engine-5-redirectors-blueprints/
 ---
 
 Note:Main explanation and link to the post of how to fix redirectors by hand in UE5
@@ -19,29 +19,18 @@ Link: <https://tvillalbac.github.io/blog/how-to-esxi-update/>
 
 Note:AssetTools module explanation and how to get it for using
 
+
 ```cpp
+// Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus,
+// tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.
 FAssetToolsModule& AssetToolsModule = FModuleManager::Get().LoadModuleChecked<FAssetToolsModule>(TEXT("AssetTools"));
 ```
 
-or
-
-```cpp
-IAssetTools& AssetTools = FModuleManager::Get().LoadModuleChecked<FAssetToolsModule>(TEXT("AssetTools")).Get();
-```
 
 ## Fix up Referencers 
 
 Note:Link to UE5 documentation. In which file do we could find the FixUpReferencers function
 
-```cpp
-AssetToolsModule.Get().FixupReferencers(RedirectorsToFix);
-```
-
-or
-
-```cpp
-AssetTools.FixupReferencers(RedirectorsToFix);
-```
 
 ## Extend Fix up referencers in Blueprints and Python
 

@@ -7,7 +7,7 @@ description: About me
 permalink: /about/
 ---
 
-<img class="img-rounded" src="https://tvillalbac.github.io/blog/assets/img/profile.jpg" alt="Toni Villalba Corominas" width="200">
+<img class="img-rounded" src="https://tvillalbac.github.io/blog/assets/img/profile.jpg" alt="Toni Villalba Corominas" width="320">
 
 # Toni Villalba Corominas
 

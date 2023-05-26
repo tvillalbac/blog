@@ -1,15 +1,16 @@
 ---
-date: 2023-05-12 20:05
+date: 2023-05-20 20:05
 layout: post
-title: Fix up Unreal Engine 5 redirectors by c++ code
-subtitle: Learn how to fix up Unreal Engine referencers by code
-description: How to fix up Unreal Engine 5 redirectors by c++ code
-image: https://tvillalbac.github.io/blog/assets/img/posts/fix-up-unreal-engine-redirectors-by-code-cpp.jpg
+title: Fix up Unreal Engine 5 redirectors by hand
+subtitle: Learn how to fix up Unreal Engine referencers by hand
+description: How to fix up Unreal Engine 5 redirectors by hand
+image: https://tvillalbac.github.io/blog/assets/img/posts/fix-up-unreal-engine-redirectors-manually.jpg
 category: Unreal Engine 5
 category-url: unreal-engine-5
-tags: unreal-engine cpp
+tags: unreal-engine
 author: toni-villalba-corominas
-recommended: https://tvillalbac.github.io/blog/how-to-fix-up-unreal-engine-5-redirectors-cpp-2/
+paginate: true
+recommended: https://tvillalbac.github.io/blog/how-to-fix-up-unreal-engine-5-redirectors-cpp/
 ---
 
 Note:Main explanation and link to the post of how to fix redirectors by hand in UE5
@@ -19,13 +20,13 @@ Link: <https://tvillalbac.github.io/blog/how-to-esxi-update/>
 
 Note:AssetTools module explanation and how to get it for using
 
-```cpp
+```bash
 FAssetToolsModule& AssetToolsModule = FModuleManager::Get().LoadModuleChecked<FAssetToolsModule>(TEXT("AssetTools"));
 ```
 
 or
 
-```cpp
+```bash
 IAssetTools& AssetTools = FModuleManager::Get().LoadModuleChecked<FAssetToolsModule>(TEXT("AssetTools")).Get();
 ```
 
@@ -33,13 +34,13 @@ IAssetTools& AssetTools = FModuleManager::Get().LoadModuleChecked<FAssetToolsMod
 
 Note:Link to UE5 documentation. In which file do we could find the FixUpReferencers function
 
-```cpp
+```bash
 AssetToolsModule.Get().FixupReferencers(RedirectorsToFix);
 ```
 
 or
 
-```cpp
+```bash
 AssetTools.FixupReferencers(RedirectorsToFix);
 ```
 

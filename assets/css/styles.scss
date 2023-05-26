@@ -2,7 +2,7 @@
 ---
 
 
-$themeColor: #0a99ff;
+$themeColor: #56b9ff;
 $primaryDark: rgb(10, 10, 14);
 $accentDark: #ffffff;
 $lightGray: #9a9dab;
@@ -17,7 +17,7 @@ body, footer, body.main-page, .bar-header, body.main-page .bar-header, body.ligh
 
 // secondary background color
 .bar-header .get-theme, .box-item .box-body .tags a:hover, aside.sidebar nav ul li a:hover, .time-bar .completed, .contact-form button[type="submit"], .search-form .icon-remove-sign, .search-form .search-list .entry-category, .post-content .tags a:hover {
-    background-color: #0a99ff;
+    background-color: #56b9ff;
 }
 
 .post-content .tag-title span {
@@ -49,15 +49,15 @@ h4, h5, .post-content p.post-subtitle, aside.sidebar nav ul li a {
 
 // highlight color
 .box-item .box-body .cover .read-icon, .hero .content .button svg, .post-content a, .author .name a, footer a:hover, .search-form .search-list a:hover {
-    color: #0a99ff;
+    color: #56b9ff;
 }
 
 .post-content blockquote {
-    border-color: #0a99ff;
+    border-color: #56b9ff;
 }
 
 footer svg.love, footer a:hover {
-    fill:#0a99ff;
+    fill:#56b9ff;
 }
 
 footer a  {
@@ -99,6 +99,23 @@ footer ul a:hover {
     border-color: #ebebee;
 }
 
+a.post-category {
+    display: block;
+    font-size: 0.5em;
+}
+
 .about-title {
     padding-top: 0 !important;
+}
+
+.see-also h3 {
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+
+.see-also span.category {
+    color: #56b9ff ;
+    margin-bottom: 25px;
+    display: block;
+    font-weight: 600;
 }
