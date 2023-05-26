@@ -47,5 +47,11 @@ Success! Now you can select any asset or folder in Content Browser and click on 
 
 In essence, what this plugin does, is adding another contextual menu entry in Unreal Engine Content Browser, next to "Rename" and "Move Here" entries, which are actions able to cause redirectors creation, with extended functionality of fixing created redirectors right after the move or rename action has finished.
 
+On right click on an asset or folder in Content Browser, it shows the "Rename File Fixing Redirectors" menu, if selection is a file, or the "Rename Folders Fixing Redirectors" menu, if selection is a folder.
+
 <img class="img" src="https://tvillalbac.github.io/blog/assets/img/pages/RedirectorsFixerGuide/rename-asset-fixing-redirectors-plugin-contextual-menu.jpg" alt="Rename asset contextual menu of TVC Redirectors Fixer plugin in Unreal Engine 5">
+
+On drag and drop any files or folders on top another folder, it shows the "Move Fixing Redirectors Here" menu entry.
+
+<img class="img" src="https://tvillalbac.github.io/blog/assets/img/pages/RedirectorsFixerGuide/move-here-fixing-redirectors-plugin.jpg" alt="Move here assets contextual menu of TVC Redirectors Fixer plugin in Unreal Engine 5">
 <img class="img" src="https://tvillalbac.github.io/blog/assets/img/pages/RedirectorsFixerGuide/move-here-fixing-redirectors-plugin-contextual-menu.jpg" alt="Move here assets contextual menu of TVC Redirectors Fixer plugin in Unreal Engine 5">
