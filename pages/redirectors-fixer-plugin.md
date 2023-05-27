@@ -102,7 +102,12 @@ If the dropped selection includes any folder, the plugin will also fix the redir
 
 ## Use Redirectors Fixer Blueprint
 
-There's also a blueprint node included with the plugin for fixing redirectors that you can use in your editor blueprints.
+There's also a blueprint node included with the plugin for fixing redirectors that you can use in your editor blueprints. You can find it by looking for "tvc" or "redirectors" in blueprint nodes creation search bar.
+
+<img class="img" src="https://tvillalbac.github.io/blog/assets/img/pages/RedirectorsFixerGuide/redirectors-fixer-blueprint-node.jpg" alt="TVC Redirectors Fixer blueprint node">
 
 Let's supose that we have a simple asset action utility for searching and replacing asset names in blueprints as the one we developed in this <a href="https://tvillalbac.github.io/blog/how-to-activate-unreal-engine-plugin/">blog post</a> and we want to fix redirectors after the renaming action has finished.
 
+We could save the paths of the selected assets in an array of strings before being renamed and, after that, we could pass the array of paths to the blueprint node and it will fix them only if any of this paths has become a redirector. Blueprint node checks if there's an exiting asset in each path passed and, if it's a redirector, it will be fixed.
+
+<img class="img" src="https://tvillalbac.github.io/blog/assets/img/pages/RedirectorsFixerGuide/redirectors-fixer-blueprint-node-applied.jpg" alt="TVC Redirectors Fixer blueprint node applied">
