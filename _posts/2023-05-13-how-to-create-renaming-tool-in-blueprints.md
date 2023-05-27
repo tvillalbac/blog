@@ -4,7 +4,7 @@ layout: post
 title: How to create a renaming tool for Unreal Engine 5 in blueprints (search and replace) 
 subtitle: Learn how to create asset action utilities using blueprints
 description: How to create asset action utilities in Unreal Engine 5 using blueprints
-image: https://tvillalbac.github.io/blog/assets/img/posts/fix-up-unreal-engine-redirectors-using-blueprints.jpg
+image: https://tvillalbac.github.io/blog/assets/img/posts/rename-asset-action-utility-blueprints-full-unreal-engine-5.jpg
 category: Unreal Engine 5
 category-url: unreal-engine-5
 tags: unreal-engine blueprints
