@@ -119,3 +119,13 @@ a.post-category {
     display: block;
     font-weight: 600;
 }
+
+@media (max-width: 400px) {
+    .logo a {
+        font-size: 1.65rem !important;
+    }
+
+    .bar-header .version {
+        transform: translate(0%, -50%);
+    }
+}

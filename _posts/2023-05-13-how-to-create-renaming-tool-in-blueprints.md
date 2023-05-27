@@ -22,23 +22,7 @@ Scripted actions give us support for getting the assets or actors selected at th
 
 ## Renaming Tool in blueprints
 
-We are going to create a renaming tool that searches for a selected string in selected assets names and replaces that string for another one of our selection. We'll be using Unreal Engine 5.2 but this procedure is tested in every later versions from 5.0. The tool UI will lok like this:
+We are going to create a renaming tool that searches for a selected string in selected assets names and replaces that string for another one of our selection. We'll be using Unreal Engine 5.2 but this procedure is tested in every later versions from 5.0. The tool UI will look like this:
 
 <img class="img" src="https://tvillalbac.github.io/blog/assets/img/posts/rename-asset-action-utility-blueprints-ui-unreal-engine-5.jpg" alt="Rename Assets asset action utility in blueprints ui">
 
-
-
-
-```bash
-AssetToolsModule.Get().FixupReferencers(RedirectorsToFix);
-```
-
-or
-
-```bash
-AssetTools.FixupReferencers(RedirectorsToFix);
-```
-
-## Extend Fix up referencers in Blueprints and Python
-
-Note:Explanation that we can easily create our own custom redirectors function and a link to an article on how to make our fixing redirectors function available in python and blueprints.
