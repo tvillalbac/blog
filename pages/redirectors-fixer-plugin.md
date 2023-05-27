@@ -20,6 +20,7 @@ permalink: /redirectors-fixer-plugin/
 4. <a href="https://tvillalbac.github.io/blog/redirectors-fixer-plugin/#basic-usage">Basic Usage</a>
 5. <a href="https://tvillalbac.github.io/blog/redirectors-fixer-plugin/#rename-files-and-folders-fixing-redirectors">Rename files and folders fixing redirectors</a>
 6. <a href="https://tvillalbac.github.io/blog/redirectors-fixer-plugin/#move-files-and-folders-fixing-redirectors">Move files and folders fixing redirectors</a>
+7. <a href="https://tvillalbac.github.io/blog/redirectors-fixer-plugin/#use-redirectors-fixer-blueprint">Use Redirectors Fixer Blueprint</a>
 
 
 ## Install plugin
@@ -30,7 +31,7 @@ If you want to purchase it or don't know how to install it, you can search for "
 
 ## Activate plugin
 
-For activating the plugin, you can refer to <a href="https://tvillalbac.github.io/blog/how-to-activate-unreal-engine-plugin/">this blog post</a> to know how activate the plugin for your project.
+For activating the plugin, you can refer to this <a href="https://tvillalbac.github.io/blog/how-to-activate-unreal-engine-plugin/">blog post</a> to know how activate the plugin for your project.
 
 Once this step is done, we can continue to next configuration stage.
 
@@ -98,4 +99,10 @@ If the dropped selection includes any folder, the plugin will also fix the redir
 
 <img class="img" src="https://tvillalbac.github.io/blog/assets/img/pages/RedirectorsFixerGuide/move-here-fixing-redirectors-plugin-contextual-menu-multiselection.jpg" alt="Move here assets and folders contextual menu">
 <img class="img" src="https://tvillalbac.github.io/blog/assets/img/pages/RedirectorsFixerGuide/move-folder-and-files-fixing-redirectors-plugin-success-messages.jpg" alt="Move here assets and folders success messages">
+
+## Use Redirectors Fixer Blueprint
+
+There's also a blueprint node included with the plugin for fixing redirectors that you can use in your editor blueprints.
+
+Let's supose that we have a simple asset action utility for searching and replacing asset names in blueprints as the one we developed in this <a href="https://tvillalbac.github.io/blog/how-to-activate-unreal-engine-plugin/">blog post</a> and we want to fix redirectors after the renaming action has finished.
 

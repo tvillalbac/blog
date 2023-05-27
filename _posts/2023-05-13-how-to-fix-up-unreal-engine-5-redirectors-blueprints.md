@@ -7,7 +7,7 @@ description: How to fix up Unreal Engine 5 redirectors using blueprints
 image: https://tvillalbac.github.io/blog/assets/img/posts/fix-up-unreal-engine-redirectors-using-blueprints.jpg
 category: Unreal Engine 5
 category-url: unreal-engine-5
-tags: unreal-engine cpp
+tags: unreal-engine blueprints
 author: toni-villalba-corominas
 recommended: https://tvillalbac.github.io/blog/how-to-fix-up-unreal-engine-5-redirectors-cpp/
 ---

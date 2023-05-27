@@ -7,7 +7,7 @@ description: How to activate a plugin from marketplace in Unreal Engine 5
 image: https://tvillalbac.github.io/blog/assets/img/pages/RedirectorsFixerGuide/activate-tvc-redirectors-fixer-plugin-in-plugins-window.jpg
 category: Unreal Engine 5
 category-url: unreal-engine-5
-tags: unreal-engine
+tags: unreal-engine blueprints
 author: toni-villalba-corominas
 recommended: https://tvillalbac.github.io/blog/how-to-fix-up-unreal-engine-5-redirectors-blueprints/
 ---
