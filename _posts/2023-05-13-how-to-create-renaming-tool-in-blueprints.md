@@ -38,6 +38,8 @@ I've called it EUB_ContentBrowserTools as this name is only for sorting purposes
 
 I called this function RenameAssetsSpecial and, as I explained before, this will be the displayed name for the action and the tool window title. I added to String inputs to the function, one called SearchText, the other one called ReplaceText. This will give us the values we input in the ui after we click in "Ok" button.
 
+> Function and inputs names must be written in <a href="https://wiki.c2.com/?UpperCamelCase">UpperCamelCase convention</a>, without blank spaces, as Unreal engine will interpret them and will place the blank spaces in displayed values for us.
+
 <img class="img" src="https://tvillalbac.github.io/blog/assets/img/posts/creating-function-inputs-in-asset-action-utility-blueprint-in-unreal-engine-5.jpg" alt="Creating function inputs in asset action utility in blueprints">
 
 Then, I added the Get Selected Assets node and linked to a For Each Loop fed by the Return Value of the Get Selected Assets node. The graph will be making an operation iin every asset in selection.
@@ -57,4 +59,13 @@ I Added a Print String node with an "Assets Renamed!" message for being displaye
 <img class="img" src="https://tvillalbac.github.io/blog/assets/img/posts/rename-asset-and-print-success-in-asset-action-utility-blueprint-in-unreal-engine-5.jpg" alt="Rename asset and print success in asset action utility in blueprints">
 <img class="img" src="https://tvillalbac.github.io/blog/assets/img/posts/rename-asset-action-utility-blueprints-full-unreal-engine-5.jpg" alt="Finished asset action utility in blueprints">
 
-It's time to test it in any asset in UE5 Content Browser.
+It's time to test it in any asset in UE5 Content Browser. For that, we select some assets in Content Browser and right click on them, under the menu Scripted Asset Actions you will find the menu Rename Assets Special, and by clicking on it the before mentioned ui will be displayed in screen.
+
+<img class="img" src="https://tvillalbac.github.io/blog/assets/img/posts/testing-asset-action-utility-blueprint-in-unreal-engine-5.jpg" alt="Testing function in asset action utility in blueprints">
+
+We can fill Search Text and Replace Text text fields as we need and click "Ok" button to execute our scripted action and after the operation has finished we'll see the message "Assets Renamed!" in our Level Editor window.
+
+<img class="img" src="https://tvillalbac.github.io/blog/assets/img/posts/renaming-assets-using-asset-action-utility-blueprint-in-unreal-engine-5.jpg" alt="Renaming assets using asset action utility in blueprints">
+<img class="img" src="https://tvillalbac.github.io/blog/assets/img/posts/renaming-assets-finished-using-asset-action-utility-blueprint-in-unreal-engine-5.jpg" alt="Renamed assets using asset action utility in blueprints">
+
+
