@@ -12,26 +12,14 @@ author: toni-villalba-corominas
 recommended: https://tvillalbac.github.io/blog/how-to-fix-up-unreal-engine-5-redirectors-blueprints/
 ---
 
-Note:Main explanation and link to the post of how to fix redirectors by hand in UE5
-Link: <https://tvillalbac.github.io/blog/how-to-esxi-update/>
-
-## AssetTools module: A module for managing assets
-
-Note:AssetTools module explanation and how to get it for using
 
 
 ```cpp
 FAssetRegistryModule& AssetRegistryModule = FModuleManager::LoadModuleChecked<FAssetRegistryModule>("AssetRegistry");
-FSoftObjectPath MaskSoftPath = FSoftObjectPath(*OMaskPath);
-FassetData OMaskAsset = AssetRegistryModule.Get().GetAssetByObjectPath(MaskSoftPath);
+FSoftObjectPath SoftPath = FSoftObjectPath(*Path);
+FassetData AssetData = AssetRegistryModule.Get().GetAssetByObjectPath(SoftPath);
 ```
 
-
-## Fix up Referencers 
-
-Note:Link to UE5 documentation. In which file do we could find the FixUpReferencers function
-
-
-## Extend Fix up referencers in Blueprints and Python
-
-Note:Explanation that we can easily create our own custom redirectors function and a link to an article on how to make our fixing redirectors function available in python and blueprints.
+```cpp
+const FAssetData AssetData = UEditorAssetLibrary::FindAssetData(AssetPathName);
+```

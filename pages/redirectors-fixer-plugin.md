@@ -102,7 +102,7 @@ If the dropped selection includes any folder, the plugin will also fix the redir
 
 ## Use Redirectors Fixer Blueprint
 
-There's also a blueprint node included with the plugin for fixing redirectors that you can use in your editor blueprints. You can find it by looking for "tvc" or "redirectors" in blueprint nodes creation search bar.
+There's also a blueprint node called TVCRedirectorsFixer included with the plugin for fixing redirectors that you can use in your editor blueprints. You can find it by looking for "tvc" or "redirectors" in blueprint nodes creation search bar.
 
 <img class="img" src="https://tvillalbac.github.io/blog/assets/img/pages/RedirectorsFixerGuide/redirectors-fixer-blueprint-node.jpg" alt="TVC Redirectors Fixer blueprint node">
 
@@ -111,3 +111,33 @@ Let's supose that we have a simple asset action utility for searching and replac
 We could save the paths of the selected assets in an array of strings before being renamed and, after that, we could pass the array of paths to the blueprint node and it will fix them only if any of this paths has become a redirector. Blueprint node checks if there's an exiting asset in each path passed and, if it's a redirector, it will be fixed.
 
 <img class="img" src="https://tvillalbac.github.io/blog/assets/img/pages/RedirectorsFixerGuide/redirectors-fixer-blueprint-node-applied.jpg" alt="TVC Redirectors Fixer blueprint node applied">
+
+## Use Redirectors Fixer in python
+
+As TVCRedirectorsFixer blueprint node is exposed in python, we can make use of it for our python scripts.
+
+We can call this python method by writting:
+
+```python
+unreal.TVCRedirectorsFixerBPFL.tvc_redirectors_fixer(paths_list_of_redirectors)
+```
+
+Actually, as this is the same blueprint functionality, we know already that we can pass any asset path to this function and it will check if it's a redirector before trying to fix it.
+
+If we want to make a function to fix up selected redirectors in content browser in python, we could make:
+
+```python
+def get_selected_assets_paths():
+    selected_assets = unreal.EditorUtilityLibrary.get_selected_assets()
+    paths = []
+    for asset in selected_assets:
+        path = asset.get_path_name()
+        paths.append(path)
+    return paths
+
+def fix_selected_redirectors():
+    paths = get_selected_assets_paths()
+    # This is the call to our blueprint function in python
+    unreal.TVCRedirectorsFixerBPFL.tvc_redirectors_fixer(paths)
+```
+
