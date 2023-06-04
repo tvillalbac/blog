@@ -22,12 +22,12 @@
 # Site Settings
 name: Toni Villalba Corominas
 title: Toni Villalba Corominas | A blog about Technical Art for 3D Videogames
-description: Blog
+description: A blog about 3d videogames technical art.
 baseurl: "/blog"
 url: "https://tvillalbac.github.io"
 language: "en"
 locale: "en-US"
-timezone: America/New_York
+timezone: Europe/Madrid
 search: true
 
 
@@ -36,12 +36,12 @@ show_hero: true
 menu:
   - title: Home
     url: /
-  - title: Tags
-    url: /tags
-  - title: About
+  - title: About Me
     url: /about
-  - title: Projects
-    url: /projects
+  - title: TVC Redirectors Fixer Plugin
+    url: /redirectors-fixer-plugin
+  - title: Contact
+    url: /contact
   - title: Feed
     url: /feed.xml
 categories_folder: category
@@ -49,14 +49,16 @@ sent_message_url: "/contact/message-sent/"
 
 
 tags:
-  - blog
-  - template
-  - jekyll
-  - theme
+  - techart
+  - 3dvideogames
+  - technical
+  - 3dart
+  - Tools
+  - Unreal-engine
 
 # Social Media Settings
 github_username: tvillalbac
-linkedin_username: tvillalbac
+linkedin_username: toni-villalba-corominas
 email: tvillalbac@hotmail.com
 # facebook_username: facebook_username
 # twitter_username: bgx4k3p
@@ -74,11 +76,11 @@ email: tvillalbac@hotmail.com
 show_time_bar: true
 show_modal_on_exit: false
 show_modal_on_finish_post: true
-two_columns_layout: true
+two_columns_layout: false
 
 # Advanced Settings
 #google_analytics: "UA-XXXXXXXX-X"
-google_analytics: "G-HP7XX1PBQ9"
+google_analytics: "UA-XXXXXXXX-X"
 
 # Build settings
 remote_theme: thiagorossener/jekflix-template
