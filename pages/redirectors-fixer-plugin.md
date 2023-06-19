@@ -21,7 +21,7 @@ permalink: /redirectors-fixer-plugin/
 5. <a href="https://tvillalbac.github.io/blog/redirectors-fixer-plugin/#rename-files-and-folders-fixing-redirectors">Rename files and folders fixing redirectors</a>
 6. <a href="https://tvillalbac.github.io/blog/redirectors-fixer-plugin/#move-files-and-folders-fixing-redirectors">Move files and folders fixing redirectors</a>
 7. <a href="https://tvillalbac.github.io/blog/redirectors-fixer-plugin/#use-redirectors-fixer-blueprint">Use Redirectors Fixer Blueprint</a>
-
+8. <a href="https://tvillalbac.github.io/blog/redirectors-fixer-plugin/#use-redirectors-fixer-in-python">Use Redirectors Fixer In Python</a>
 
 ## Install plugin
 

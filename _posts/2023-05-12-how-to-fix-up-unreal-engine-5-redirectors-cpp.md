@@ -1,5 +1,5 @@
 ---
-date: 2023-05-12 20:05
+date: 2023-06-21 08:05
 layout: post
 title: Fix up Unreal Engine 5 redirectors by c++ code
 subtitle: Learn how to fix up Unreal Engine referencers by code
@@ -27,45 +27,83 @@ But in this article, I'll explain how to create a function in Unreal Engine C++,
 
 <a href="https://docs.unrealengine.com/5.2/en-US/API/Developer/AssetTools/IAssetTools">IAssetTools module</a> is part of the AssetTools module, and is a class including a set of functions specially created for assets oparations like creation, duplication, renaming, and many other. I encourage you to check them in the last link shared to see them all.
 
+## Including AssetTools module in our project or plugin
+
 To work with this module, we need to include the AssetTools module in your plugin .Build.cs file:
 
-<img class="img" src="https://tvillalbac.github.io/blog/assets/img/pages/RedirectorsFixerGuide/adding-assettools-module-to-unreal-plugin.jpg" alt="Add AssetTools module in Unreal Engine 5 plugin">
+<img class="img" src="https://tvillalbac.github.io/blog/assets/img/posts/adding-assettools-module-to-unreal-plugin.jpg" alt="Add AssetTools module in Unreal Engine 5 plugin">
 
 or project .Build.cs file:
 
-<img class="img" src="https://tvillalbac.github.io/blog/assets/img/pages/RedirectorsFixerGuide/adding-assettools-module-to-unreal-project.jpg" alt="Add AssetTools module in Unreal Engine 5 project">
-
+<img class="img" src="https://tvillalbac.github.io/blog/assets/img/posts/adding-assettools-module-to-unreal-project.jpg" alt="Add AssetTools module in Unreal Engine 5 project">
 
 depending if you want to use the module in project's source code or in a plugin.
 
-
-
-
+Then, you need to add the proper include in the file we want to load the AssetTools module
 
 ```cpp
-FAssetToolsModule& AssetToolsModule = FModuleManager::Get().LoadModuleChecked<FAssetToolsModule>(TEXT("AssetTools"));
+#include "AssetToolsModule.h"
 ```
 
-or
+Once this is done, we can define and declare our function in our plugin or project class.
+
+## Redirectors Fixer function
+
+Let's create our public function and place the proper UFUNCTION macro in the line above to make use of the <a href="https://www.unrealengine.com/en-US/blog/unreal-property-system-reflection">Unreal Engine reflection system</a> that will also expose the function to Blueprints and python.
 
 ```cpp
-IAssetTools& AssetTools = FModuleManager::Get().LoadModuleChecked<FAssetToolsModule>(TEXT("AssetTools")).Get();
+public:
+    UFUNCTION(BlueprintCallable, meta = (DisplayName = "TVC Redirectors Fixer", Keywords = "TVCRedirectorsFixerPlugin redirector fix fixer"), Category = "TVCRedirectorsFixerPlugin")
+	static void TVCRedirectorsFixer(TArray<FString> Paths);
 ```
 
-## Fix up Referencers 
+I named the function TVCRedirectorsFixer and its input is solely an array of the content browser paths to the redirectors to fix.
 
-Note:Link to UE5 documentation. In which file do we could find the FixUpReferencers function
+As UFUNCTION properties I used BlueprintCallable to expose the function in a Blueprint or Level Blueprint graph and in meta tag, added a proper name, category and keywords for easy finding in blueprints search tool.
+
+I made my function like this, writting the two includes that I needed for it to work (place them on your file at the top properly):
 
 ```cpp
-AssetToolsModule.Get().FixupReferencers(RedirectorsToFix);
+#include "AssetToolsModule.h"
+#include "EditorAssetLibrary.h"
+
+void UTVCRedirectorsFixerBPFL::TVCRedirectorsFixer(TArray<FString> Paths)
+{
+	TArray<UObjectRedirector*> Redirectors;
+	for (FString& Path : Paths)
+	{
+		UObject* Object = UEditorAssetLibrary::LoadAsset(Path);
+		if (Object)
+		{
+			auto Redirector = Cast<UObjectRedirector>(Object);
+			if (Redirector)
+			{
+				Redirectors.Add(Redirector);
+			}
+		}
+	}
+
+	FAssetToolsModule& AssetToolsModule = FModuleManager::LoadModuleChecked< FAssetToolsModule>(TEXT("AssetTools"));
+	AssetToolsModule.Get().FixupReferencers(Redirectors, true, ERedirectFixupMode::DeleteFixedUpRedirectors);
+}
 ```
 
-or
+To make use of the UEditorAssetLibrary for loading the paths passed to the function, we need to include the header EditorAssetLibrary.h and the module EditorScriptingUtilities in our project or plugin as we explained in <a href="https://tvillalbac.github.io/blog/how-to-fix-up-unreal-engine-5-redirectors-cpp/#use-redirectors-fixer-blueprint/#including-assettools-module-in-our-project-or-plugin/">Including AssetTools module in our project or plugin</a> but replacing AssetTools by EditorScriptingUtilities.
 
-```cpp
-AssetTools.FixupReferencers(RedirectorsToFix);
-```
+In our function, first, we create an array of UObjectRedirectors to store the paths corresponding to a redirector.
+
+Then, we iterate over the passed paths and try to cast the object loaded with each path to a redirector. If it's a redirector, we'll store it in our array of redirectors that we'll later pass to the fixup redirectors built-in function. This is a important step, as the execution will crash if we pass not a redirector in the array.
+
+The final step is to load the Asset Tools module, get the IAssetTools class with the Get() function and use the function FixUpReferencers passing the redirectors array to it, the next parameter I set on true is bCheckoutDialogPrompt that manage if the source control dialog should appear in the process, and lastly is the FixupMode, which is an ERedirectFixupMode enum where the values available are DeleteFixedUpRedirectors or LeaveFixedUpRedirectors.
 
 ## Extend Fix up referencers in Blueprints and Python
 
-Note:Explanation that we can easily create our own custom redirectors function and a link to an article on how to make our fixing redirectors function available in python and blueprints.
+As we added the UFUNCTION macro at the line above our function declaration, this function now is exposed in blueprints, so we can use that function as a plugin in our editor blueprints as it can be done with the TVC Redirectors Fixer plugin, explained here <a href="https://tvillalbac.github.io/blog/redirectors-fixer-plugin/#use-redirectors-fixer-blueprint">Use Redirectors Fixer Blueprint</a>
+
+We also have exposed the functions to python API like happens using TVC Redirectors Fixer plugin, explained here: <a href="https://tvillalbac.github.io/blog/redirectors-fixer-plugin/#use-redirectors-fixer-in-python">Use Redirectors Fixer In Python</a>, but modifying the python
+
+```python
+unreal.NameOfMyClass.tvc_redirectors_fixer(paths_list_of_redirectors)
+```
+
+Note that NameOfMyClass must be replaced by the name of the class where the function belongs to.
