@@ -1,37 +1,13 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you: 
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-
-
 # Site Settings
 name: Toni Villalba Corominas
-title: Toni Villalba Corominas | A blog about Technical Art for 3D Videogames
+title: Toni Villalba Corominas | A blog about 3d videogames technical art
 description: A blog about 3d videogames technical art.
-baseurl: "/blog"
-url: "https://tvillalbac.github.io"
+baseurl: "/blog"  # not for local
+url: "https://tvillalbac.github.io"  # not for local
 language: "en"
 locale: "en-US"
 timezone: Europe/Madrid
-search: true
 
-
-# Site Layout
 show_hero: true
 menu:
   - title: Home
@@ -40,13 +16,16 @@ menu:
     url: /about
   - title: TVC Redirectors Fixer Plugin
     url: /redirectors-fixer-plugin
-  - title: Contact
-    url: /contact
+  # - title: Contact
+  #   url: /contact
   - title: Feed
     url: /feed.xml
-categories_folder: category
-sent_message_url: "/contact/message-sent/"
 
+# # See: https://disqus.com/
+# disqus_username: disqus_username
+# # Contact Form Setting
+# # See: https://formspree.io/
+# formspree_form_id: formspree_form_id
 
 tags:
   - techart
@@ -57,33 +36,33 @@ tags:
   - Unreal-engine
 
 # Social Media Settings
+# Remove the item if you don't need it
 github_username: tvillalbac
 linkedin_username: toni-villalba-corominas
 email: tvillalbac@hotmail.com
+# github_username: github_username
 # facebook_username: facebook_username
-# twitter_username: bgx4k3p
+# twitter_username: twitter_username
 # instagram_username: instagram_username
+# linkedin_username: linkedin_username
 # medium_username: medium_username
-
-# See: https://disqus.com/
-# disqus_username: disqus_username
-# Contact Form Setting
-# See: https://formspree.io/
-# formspree_form_id: formspree_form_id
 
 
 # Posts Settings
 show_time_bar: true
 show_modal_on_exit: false
 show_modal_on_finish_post: true
-two_columns_layout: false
+two_columns_layout: true
+
 
 # Advanced Settings
-#google_analytics: "UA-XXXXXXXX-X"
 google_analytics: "UA-XXXXXXXX-X"
+categories_folder: category
+sent_message_url: "/contact/message-sent/"
+
 
 # Build settings
-remote_theme: thiagorossener/jekflix-template
+remote_theme: thiagorossener/jekflix-template # not for local
 markdown: kramdown
 highlighter: rouge
 permalink: /:title/
@@ -131,6 +110,7 @@ exclude: [
   'Gemfile',
   'Gemfile.lock',
   'gulpfile.js',
+  'README.md'
 ]
 
 # Theme

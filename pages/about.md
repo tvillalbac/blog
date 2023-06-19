@@ -25,66 +25,6 @@ permalink: /about/
 
 # E X P E R I E N C E
 
-## Web programmer
-
-#### *Freelance / Vila-real (Castellón), Spain / July 2011- April 2019*
-{: .about-title }
-
-After having experience in sales and passionate about coding for the web, I run my own webpages business, specialized on big companies. I enjoyed a lot during many years but because my passion for 3d videogames I decided to switch my career to videogames industry and learn all the necessary on my free time until I considered that I had a good portfolio for applying for a big company.  
-- Coding in the main languages used in webpages as Html, Css, javascript and 
-sql,
-- Sales and customer support.
-- Writing docs for the webpages and teaching client workers on how to 
-manage the webpages
-- Manage my small own teams of salesmen and programmers  
-
-## Technical Artist
-
-#### *elite3d / Valencia, Spain / May 2019- December 2019 (On site/Remote)*
-{: .about-title }
-
-As a AAA outsourcing studio, in elite3d I had the chance to work on a big variety of 
-projects and production tools. I learned there to be a jack of all trades and learned from 
-the tech art mates of the client companies as I was the only technical artist with 
-advanced coding skills at the studio.
-- For The Division 2 Episode 2 ( 15 environment artists) I had the chance of 
-working in creating a lot of cloths, Substance Painter smart materials for 
-helping the team to paint the masks for the layered material system of 
-environmental models and help on setting the actors in Snowdrop, even the 
-physics and destruction of the assets we produced at the studio. I also did 
-documentation about the tools created and some other docs for helping the 
-team to understand concepts and quick guides. When I joined the project 
-we were completely out of time and this helping hand was key for finishing 
-the project before expected and we could even make some extra polish.
-- For Cyberpunk 2077 (20 environment artists) I had the chance of making 
-some Maya tools for the team for speeding up the process of stacking UVs, 
-worked on some environmental assets to know the content creation 
-pipeline and integration with Red Engine and I had the chance of reading 
-and learning from their content creation tools, specially texturing pipeline 
-and materials creation.
-- For Battlefield 2042 (45 environment artists) I worked during the whole 
-production process (2 years), helping coding tools for easy texturing 
-environmental assets in Maya and Painter, using a material layering system. 
-I also debugged and helped DICE finding errors in Frostbite as they were 
-updating the engine and validating the Frostbite versions, validated the 
-correct setup of all the actors we sent to client in engine, even physics and 
-destruction, created documentation about tools or undocumented new 
-Frostbite updates for general use, taught the team about the new tools and 
-warn about bugs and maintain a fluid communication with client 
-stakeholders during all the production. I received a couple of good mentions 
-from EA, and I also helped during some months in another EA project using 
-the same engine at the same time I helped on Battlefield until 31st Union 
-bought elite3d.
-- Helped during 5 months in a non-released project as a Unreal Engine C++ 
-game programmer.
-- I did other tools during this period for other projects covered by NDA, like a 
-python program using OpenCV for selecting too blurry images in a folder of 
-photogrammetry pictures depending on the preferred range of blurriness 
-for deleting them and helping to obtain better calculations of the points 
-cloud or a complete 3d assets library software for storing, sharing and 
-tagging 3d mehes including a 3d pbr viewer and an users-projects security 
-system integrated with a jira plugin.
-
 ## Technical Artist
 
 #### *31st Union / Valencia, Spain / from January 2020 (Remote)*
@@ -151,3 +91,63 @@ for a NFT project.
 - Created a multilayered material system for this NFT project for faster 
 creation of the models materials variations and material iteration.
 - Making Unreal Engine plugins for next release in Unreal Marketplace
+
+## Technical Artist
+
+#### *elite3d / Valencia, Spain / May 2019- December 2019 (On site/Remote)*
+{: .about-title }
+
+As a AAA outsourcing studio, in elite3d I had the chance to work on a big variety of 
+projects and production tools. I learned there to be a jack of all trades and learned from 
+the tech art mates of the client companies as I was the only technical artist with 
+advanced coding skills at the studio.
+- For The Division 2 Episode 2 ( 15 environment artists) I had the chance of 
+working in creating a lot of cloths, Substance Painter smart materials for 
+helping the team to paint the masks for the layered material system of 
+environmental models and help on setting the actors in Snowdrop, even the 
+physics and destruction of the assets we produced at the studio. I also did 
+documentation about the tools created and some other docs for helping the 
+team to understand concepts and quick guides. When I joined the project 
+we were completely out of time and this helping hand was key for finishing 
+the project before expected and we could even make some extra polish.
+- For Cyberpunk 2077 (20 environment artists) I had the chance of making 
+some Maya tools for the team for speeding up the process of stacking UVs, 
+worked on some environmental assets to know the content creation 
+pipeline and integration with Red Engine and I had the chance of reading 
+and learning from their content creation tools, specially texturing pipeline 
+and materials creation.
+- For Battlefield 2042 (45 environment artists) I worked during the whole 
+production process (2 years), helping coding tools for easy texturing 
+environmental assets in Maya and Painter, using a material layering system. 
+I also debugged and helped DICE finding errors in Frostbite as they were 
+updating the engine and validating the Frostbite versions, validated the 
+correct setup of all the actors we sent to client in engine, even physics and 
+destruction, created documentation about tools or undocumented new 
+Frostbite updates for general use, taught the team about the new tools and 
+warn about bugs and maintain a fluid communication with client 
+stakeholders during all the production. I received a couple of good mentions 
+from EA, and I also helped during some months in another EA project using 
+the same engine at the same time I helped on Battlefield until 31st Union 
+bought elite3d.
+- Helped during 5 months in a non-released project as a Unreal Engine C++ 
+game programmer.
+- I did other tools during this period for other projects covered by NDA, like a 
+python program using OpenCV for selecting too blurry images in a folder of 
+photogrammetry pictures depending on the preferred range of blurriness 
+for deleting them and helping to obtain better calculations of the points 
+cloud or a complete 3d assets library software for storing, sharing and 
+tagging 3d mehes including a 3d pbr viewer and an users-projects security 
+system integrated with a jira plugin.
+
+## Web programmer
+
+#### *Freelance / Vila-real (Castellón), Spain / July 2011- April 2019*
+{: .about-title }
+
+After having experience in sales and passionate about coding for the web, I run my own webpages business, specialized on big companies. I enjoyed a lot during many years but because my passion for 3d videogames I decided to switch my career to videogames industry and learn all the necessary on my free time until I considered that I had a good portfolio for applying for a big company.  
+- Coding in the main languages used in webpages as Html, Css, javascript and 
+sql,
+- Sales and customer support.
+- Writing docs for the webpages and teaching client workers on how to 
+manage the webpages
+- Manage my small own teams of salesmen and programmers
