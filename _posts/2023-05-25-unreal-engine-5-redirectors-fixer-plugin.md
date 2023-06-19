@@ -1,10 +1,10 @@
 ---
-date: 2023-05-22 20:05
+date: 2023-06-19 20:05
 layout: post
 title: Unreal Engine 5 Redirectors Fixer Plugin
-subtitle: Learn how to use the TVC Redirectors Fixer plugin in Unreal Engine 5
-description: How to use the TVC Redirectors Fixer plugin in Unreal Engine 5
-image: https://tvillalbac.github.io/blog/assets/img/posts/plugin-fix-up-unreal-engine-redirectors-automated-system.jpg
+subtitle: New TVC Redirectors Fixer plugin released in Unreal Engine 5 Marketplace
+description: TVC Redirectors Fixer plugin has been released in Unreal Engine Marketplace
+image: https://tvillalbac.github.io/blog/assets/img/posts/tvc-redirectors-fixer-plugin-marketplace-front-page.jpg
 category: Unreal Engine 5
 category-url: unreal-engine-5
 tags: unreal-engine
@@ -12,26 +12,20 @@ author: toni-villalba-corominas
 recommended: https://tvillalbac.github.io/blog/how-to-fix-up-unreal-engine-5-redirectors-blueprints/
 ---
 
-Note:Main explanation and link to the post of how to fix redirectors by hand in UE5
-Link: <https://tvillalbac.github.io/blog/how-to-esxi-update/>
+The new TVC Redirectors Fixer plugin has been released in Unreal Engine Marketplace for making our lives easier managing redirectors in Unreal Engine 5.
 
-## AssetTools module: A module for managing assets
+This plugin was developed by me trying to solve a common issue when working with Unreal Engine projects.
 
-Note:AssetTools module explanation and how to get it for using
+The concept is to solve the problem at the moment is caused by the person who caused it avoiding later issues.
 
+Sometimes redirectors are not managed by artists and are left for the tech or engineering team to solve them in a bulk in a later stage periodically or they are expected to be solved by the artist by making the redirectors visible, selecting the redirectors and using the right click menu Fix Up, steps that are automated now with this plugin.
 
-```cpp
-// Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus,
-// tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.
-FAssetToolsModule& AssetToolsModule = FModuleManager::Get().LoadModuleChecked<FAssetToolsModule>(TEXT("AssetTools"));
-```
+<img class="img" src="https://tvillalbac.github.io/blog/assets/img/pages/RedirectorsFixerGuide/fix-up-unreal-engine-redirectors-manually.jpg" alt="Fix Up redirectors manually">
 
+## Basic usage
 
-## Fix up Referencers 
+It adds some extra Rename Fixing Redirectors and Move Fixib¡ng Redirectors contextual menus below the actual Move or Rename menus, but these special ones fix up the created redirectors, if any, managing files in our configured source control system right after the move or rename operation happens, saving some important technical steps, and then all the fixed up files can be submitted by the team member who moved or renamed the files or folders.
 
-Note:Link to UE5 documentation. In which file do we could find the FixUpReferencers function
+## TVC Redirectors Fixer Documentation
 
-
-## Extend Fix up referencers in Blueprints and Python
-
-Note:Explanation that we can easily create our own custom redirectors function and a link to an article on how to make our fixing redirectors function available in python and blueprints.
+You can refer to <a href="https://tvillalbac.github.io/blog/redirectors-fixer-plugin/">TVC Redirectors Fixer Plugin documentation</a> to see how it works before deciding if its a good deal for you.

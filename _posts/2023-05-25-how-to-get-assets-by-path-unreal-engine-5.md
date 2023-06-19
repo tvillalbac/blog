@@ -1,5 +1,5 @@
 ---
-date: 2023-05-21 20:05
+date: 2023-06-23 20:05
 layout: post
 title: Get Assets by path in Unreal Engine 5 C++
 subtitle: Learn how to get assets by path in Unreal Engine 5 in C++
