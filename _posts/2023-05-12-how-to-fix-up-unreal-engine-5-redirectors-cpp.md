@@ -12,12 +12,35 @@ author: toni-villalba-corominas
 recommended: https://tvillalbac.github.io/blog/how-to-fix-up-unreal-engine-5-redirectors-cpp-2/
 ---
 
-Note:Main explanation and link to the post of how to fix redirectors by hand in UE5
-Link: <https://tvillalbac.github.io/blog/how-to-esxi-update/>
+<a href="https://docs.unrealengine.com/5.2/en-US/asset-redirectors-in-unreal-engine/">Redirectors</a>, in Unreal Engine, are objects that redirect references for moved (or renamed) assets from their old location to their new location.
+In example, if an asset is referenced in a level and then we move and rename that asset, Unreal leaves a redirector in the asset old location indicating the new location for the level to find the proper asset.
+
+In this <a href="https://docs.unrealengine.com/5.2/en-US/asset-redirectors-in-unreal-engine/#:~:text=in%20for%20you.-,Caveats,-Renaming">Unreal Engine Redirector's official section</a> there's a deeper explanation about the common issues involved to them.
+
+Luckily we already have <a href="https://tvillalbac.github.io/blog/redirectors-fixer-plugin">TVC Redirectors Fixer Plugin</a> to help us to fix up redirectors at the same time we move or rename files or folders avoiding errors forgetting to fix redirectors after any of those operations.
+
+But in this article, I'll explain how to create a function in Unreal Engine C++, exposed in Blueprints and python for your script tools, if you want to make your own.
 
 ## AssetTools module: A module for managing assets
 
-Note:AssetTools module explanation and how to get it for using
+<a href="https://docs.unrealengine.com/5.2/en-US/API/Developer/AssetTools/">AssetTools</a> module, is a collection of structs and classes dedicated to managing assets in our Unreal project, in content browser and in our version control systems.
+
+<a href="https://docs.unrealengine.com/5.2/en-US/API/Developer/AssetTools/IAssetTools">IAssetTools module</a> is part of the AssetTools module, and is a class including a set of functions specially created for assets oparations like creation, duplication, renaming, and many other. I encourage you to check them in the last link shared to see them all.
+
+To work with this module, we need to include the AssetTools module in your plugin .Build.cs file:
+
+<img class="img" src="https://tvillalbac.github.io/blog/assets/img/pages/RedirectorsFixerGuide/adding-assettools-module-to-unreal-plugin.jpg" alt="Add AssetTools module in Unreal Engine 5 plugin">
+
+or project .Build.cs file:
+
+<img class="img" src="https://tvillalbac.github.io/blog/assets/img/pages/RedirectorsFixerGuide/adding-assettools-module-to-unreal-project.jpg" alt="Add AssetTools module in Unreal Engine 5 project">
+
+
+depending if you want to use the module in project's source code or in a plugin.
+
+
+
+
 
 ```cpp
 FAssetToolsModule& AssetToolsModule = FModuleManager::Get().LoadModuleChecked<FAssetToolsModule>(TEXT("AssetTools"));
