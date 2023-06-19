@@ -1,7 +1,7 @@
 ---
 date: 2023-06-19 20:05
 layout: post
-title: Unreal Engine 5 Redirectors Fixer Plugin
+title: Unreal Engine 5 Redirectors Fixer Plugin Released!
 subtitle: New TVC Redirectors Fixer plugin released in Unreal Engine 5 Marketplace
 description: TVC Redirectors Fixer plugin has been released in Unreal Engine Marketplace
 image: https://tvillalbac.github.io/blog/assets/img/posts/tvc-redirectors-fixer-plugin-marketplace-front-page.jpg
@@ -20,7 +20,7 @@ The concept is to solve the problem at the moment is caused by the person who ca
 
 Sometimes redirectors are not managed by artists and are left for the tech or engineering team to solve them in a bulk in a later stage periodically or they are expected to be solved by the artist by making the redirectors visible, selecting the redirectors and using the right click menu Fix Up, steps that are automated now with this plugin.
 
-<img class="img" src="https://tvillalbac.github.io/blog/assets/img/pages/RedirectorsFixerGuide/fix-up-unreal-engine-redirectors-manually.jpg" alt="Fix Up redirectors manually">
+<img class="img" src="https://tvillalbac.github.io/blog/assets/img/posts/fix-up-unreal-engine-redirectors-manually.jpg" alt="Fix Up redirectors manually">
 
 ## Basic usage
 
