@@ -1,5 +1,5 @@
 ---
-date: 2023-06-21 08:05
+date: 2023-06-22 08:30
 layout: post
 title: Fix up Unreal Engine 5 redirectors by c++ code
 subtitle: Learn how to fix up Unreal Engine referencers by code
@@ -96,14 +96,16 @@ Then, we iterate over the passed paths and try to cast the object loaded with ea
 
 The final step is to load the Asset Tools module, get the IAssetTools class with the Get() function and use the function FixUpReferencers passing the redirectors array to it, the next parameter I set on true is bCheckoutDialogPrompt that manage if the source control dialog should appear in the process, and lastly is the FixupMode, which is an ERedirectFixupMode enum where the values available are DeleteFixedUpRedirectors or LeaveFixedUpRedirectors.
 
-## Extend Fix up referencers in Blueprints and Python
+## Extend our function in Blueprints and Python
 
 As we added the UFUNCTION macro at the line above our function declaration, this function now is exposed in blueprints, so we can use that function as a plugin in our editor blueprints as it can be done with the TVC Redirectors Fixer plugin, explained here <a href="https://tvillalbac.github.io/blog/redirectors-fixer-plugin/#use-redirectors-fixer-blueprint">Use Redirectors Fixer Blueprint</a>
 
-We also have exposed the functions to python API like happens using TVC Redirectors Fixer plugin, explained here: <a href="https://tvillalbac.github.io/blog/redirectors-fixer-plugin/#use-redirectors-fixer-in-python">Use Redirectors Fixer In Python</a>, but modifying the python
+We also have exposed the functions to python API like happens using TVC Redirectors Fixer plugin, explained here: <a href="https://tvillalbac.github.io/blog/redirectors-fixer-plugin/#use-redirectors-fixer-in-python">Use Redirectors Fixer In Python</a>, but modifying the python code:
 
 ```python
 unreal.NameOfMyClass.tvc_redirectors_fixer(paths_list_of_redirectors)
 ```
 
-Note that NameOfMyClass must be replaced by the name of the class where the function belongs to.
+Note that NameOfMyClass must be replaced by the name of the class where the function belongs to, either it's a plugin class or a project class.
+
+Note also how the function name was automatedly converted by the python API. It converts our <a href="https://wiki.c2.com/?PascalCase">pascal case style</a> name to a [snake case style](https://en.wikipedia.org/wiki/Snake_case){:target="_blank"} name.
