@@ -14,7 +14,7 @@ recommended: https://tvillalbac.github.io/blog/how-to-fix-up-unreal-engine-5-red
 
 ## What's an Asset Action Utility?
 
-Scripted actions as the <a href="https://docs.unrealengine.com/5.0/en-US/scripted-actions-in-unreal-engine/">official documentation</a> states, are Editor Utility Blueprints that you launch in the Unreal Editor by right-clicking Assets in the Content Browser.
+Scripted actions as the <a href="https://docs.unrealengine.com/5.0/en-US/scripted-actions-in-unreal-engine/">official documentation</a> states, are Editor Utility Blueprints that you launch in the Unreal Editor based on selection in Content Browser or in actors selection in level or Outliner.
 
 With this said, we can image this is a very helpful way of building tools for managing assets and actors quickly using only blueprints. Althought you can build them using c++ too, as I will explain in a next post.
 
