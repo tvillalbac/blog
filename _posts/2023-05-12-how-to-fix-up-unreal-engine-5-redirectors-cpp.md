@@ -37,7 +37,7 @@ or project .Build.cs file:
 
 <img class="img" src="https://tvillalbac.github.io/blog/assets/img/posts/adding-assettools-module-to-unreal-project.jpg" alt="Add AssetTools module in Unreal Engine 5 project">
 
-depending if you want to use the module in project's source code or in a plugin.
+depending if you want to use the module in a plugin or in project's source code.
 
 Then, you need to add the proper include in the file we want to load the AssetTools module
 
@@ -88,7 +88,7 @@ void UTVCRedirectorsFixerBPFL::TVCRedirectorsFixer(TArray<FString> Paths)
 }
 ```
 
-To make use of the UEditorAssetLibrary for loading the paths passed to the function, we need to include the header EditorAssetLibrary.h and the module EditorScriptingUtilities in our project or plugin as we explained in <a href="https://tvillalbac.github.io/blog/how-to-fix-up-unreal-engine-5-redirectors-cpp/#use-redirectors-fixer-blueprint/#including-assettools-module-in-our-project-or-plugin/">Including AssetTools module in our project or plugin</a> but replacing AssetTools by EditorScriptingUtilities.
+To make use of the UEditorAssetLibrary for loading the paths passed to the function, we need to include the header EditorAssetLibrary.h and the module EditorScriptingUtilities in our project or plugin  .Build.cs file as we explained in <a href="https://tvillalbac.github.io/blog/how-to-fix-up-unreal-engine-5-redirectors-cpp/#use-redirectors-fixer-blueprint/#including-assettools-module-in-our-project-or-plugin/">Including AssetTools module in our project or plugin</a> but adding EditorScriptingUtilities.
 
 In our function, first, we create an array of UObjectRedirectors to store the paths corresponding to a redirector.
 
@@ -98,7 +98,9 @@ The final step is to load the Asset Tools module, get the IAssetTools class with
 
 ## Extend our function in Blueprints and Python
 
-As we added the UFUNCTION macro at the line above our function declaration, this function now is exposed in blueprints, so we can use that function as a plugin in our editor blueprints as it can be done with the TVC Redirectors Fixer plugin, explained here <a href="https://tvillalbac.github.io/blog/redirectors-fixer-plugin/#use-redirectors-fixer-blueprint">Use Redirectors Fixer Blueprint</a>
+As we added the UFUNCTION macro at the line above our function declaration, this function now is exposed in blueprints, so we can use that function as a blueprint in our editor blueprints as it can be done with the TVC Redirectors Fixer plugin, explained here <a href="https://tvillalbac.github.io/blog/redirectors-fixer-plugin/#use-redirectors-fixer-blueprint">Use Redirectors Fixer Blueprint</a>
+
+<img class="img" src="https://tvillalbac.github.io/blog/assets/img/posts/redirectors-fixer-node-exposed-in-blueprints.jpg" alt="Redirectors fixer function created in blueprints">
 
 We also have exposed the functions to python API like happens using TVC Redirectors Fixer plugin, explained here: <a href="https://tvillalbac.github.io/blog/redirectors-fixer-plugin/#use-redirectors-fixer-in-python">Use Redirectors Fixer In Python</a>, but modifying the python code:
 
@@ -109,3 +111,22 @@ unreal.NameOfMyClass.tvc_redirectors_fixer(paths_list_of_redirectors)
 Note that NameOfMyClass must be replaced by the name of the class where the function belongs to, either it's a plugin class or a project class.
 
 Note also how the function name was automatedly converted by the python API. It converts our <a href="https://wiki.c2.com/?PascalCase">pascal case style</a> name to a [snake case style](https://en.wikipedia.org/wiki/Snake_case){:target="_blank"} name.
+
+Tip: If you want to find your class in python in Unreal Engine just type in your python console in Unreal:
+
+```python
+import unreal
+
+for python_class in sorted(dir(unreal)):
+    print(python_class)
+```
+
+It will print a list of the classes available in unreal python in alphabetical order, uppercase letters first. And if you do the same but looking for your class functions:
+
+```python
+for function in sorted(dir(unreal.NameOfMyClass)):
+    print(function)
+```
+
+You could find your python function in the list and see how unreal python has named it.
+
