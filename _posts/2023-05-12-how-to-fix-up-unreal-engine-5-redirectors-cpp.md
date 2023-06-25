@@ -1,9 +1,9 @@
 ---
 date: 2023-06-22 01:30
 layout: post
-title: Fix up Unreal Engine 5 redirectors by c++ code
-subtitle: Learn how to fix up Unreal Engine referencers by code
-description: How to fix up Unreal Engine 5 redirectors by c++ code
+title: Fix up Unreal Engine 5 redirectors using c++ code
+subtitle: Learn how to create a function to fix up Unreal Engine referencers
+description: How to fix up Unreal Engine 5 redirectors using c++ code
 image: https://tvillalbac.github.io/blog/assets/img/posts/fix-up-unreal-engine-redirectors-by-code-cpp.jpg
 category: Unreal Engine 5
 category-url: unreal-engine-5
@@ -21,7 +21,7 @@ Luckily we already have <a href="https://tvillalbac.github.io/blog/redirectors-f
 
 But in this article, I'll explain how to create a function in Unreal Engine C++, exposed in Blueprints and python for your script tools, if you want to make your own.
 
-## AssetTools module: A module for managing assets
+## AssetTools module: A module for managing assets and actors
 
 <a href="https://docs.unrealengine.com/5.2/en-US/API/Developer/AssetTools/">AssetTools</a> module, is a collection of structs and classes dedicated to managing assets in our Unreal project, in content browser and in our version control systems.
 
